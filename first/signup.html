@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/signup.css" />
+    <link rel="shortcut icon" href="images/w3schools.ico" type="image/x-icon" />
+    <title></title>
+  </head>
+  <body>
+    <noscript>please turn on your javascript</noscript>
+    <section class="section-mother">
+      <header>
+        <h1>Signup</h1>
+        <p>please Signup to login your panel!</p>
+      </header>
+      <div class="div-child">
+        <form action="signup.php" method="post">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="username"
+            autocomplete
+            autofocus
+          />
+          <br />
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="password"
+          />
+          <br />
+          <label for="retype-password">Retype Password</label>
+          <input
+            type="password"
+            id="retype-password"
+            name="retype-password"
+            placeholder="retype password"
+          />
+          <br />
+          <button id="signup" type="submit">signup</button>
+          <button
+            id="login"
+            type="button"
+            onclick="window.location.href='login.html'"
+          >
+            login
+          </button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

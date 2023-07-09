@@ -1,0 +1,36 @@
+a {
+  text-decoration: none;
+}
+
+nav {
+  position: fixed;
+  padding: 10px;
+    background-color: #0d6efd;
+  list-style: none;
+}
+
+.main-menu li {
+  display: inline;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.signup {
+  background-color: #fff;
+  border-radius: 7px;
+  margin: 5px;
+}
+
+.signup a {
+  color: #0d6efd;
+}
+
+.login {
+  background-color: #fff;
+  border-radius: 7px;
+  margin: 5px;
+}
+
+.login a {
+  color: #0d6efd;
+}
