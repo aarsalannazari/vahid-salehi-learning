@@ -61,7 +61,6 @@ input:focus {
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.5);
 }
 
-
 #login {
   margin: 10px auto 0 auto;
   font-size: 20px;
@@ -89,7 +88,7 @@ input:focus {
 }
 
 .signup {
-  font-size:medium;
+  font-size: medium;
 }
 a.signup {
   direction: rtl;
@@ -107,7 +106,7 @@ a.signup:hover {
   text-align: center;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 575px) {
   hr {
     margin: 10px 0 0 0;
   }
@@ -137,13 +136,17 @@ a.signup:hover {
   }
 }
 
-@media only screen and (min-width:576px) { 
+@media only screen and (min-width: 576px) and (max-width: 899px) {
   .login-form {
     min-width: 50%;
   }
+
+  h3 {
+    font-size: 25px;
+  }
 }
 
-@media only screen and (min-width:900px) {
+@media only screen and (min-width: 900px) {
   .login-form {
     min-width: 450px;
   }
