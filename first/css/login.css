@@ -2,13 +2,33 @@
 @import url("reset.css");
 @import url("media-grids.css");
 
-/* body {
+ body {
 
-  background: silver url(../images/background.png) no-repeat;
+  /* background: silver url(../images/background.png) no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; */
   height: 100%;
-} */
+} 
+
+.loading{
+
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  border: 10px solid #efefef;
+  border-top: 10px solid green;
+  border-radius: 50%;
+  z-index: 1;
+  animation: loading 1s linear 3;
+}
+
+@keyframes loading {
+  from {transform: translate(-50%,-50%) rotate(0deg)}
+  to{transform: translate(-50%,-50%) rotate(360deg)}
+}
 
 h3 {
   font-size: 30px;
@@ -48,6 +68,7 @@ input::placeholder {
 }
 
 input {
+  font-size: 20px;
   width: 100%;
   padding: 8px 5px 5px 5px;
   outline-color: #0d6efd;
@@ -118,6 +139,7 @@ a.signup:hover {
   }
 
   input {
+    font-size: 15px;
     padding: 0 5px;
   }
 
@@ -140,6 +162,7 @@ a.signup:hover {
   }
 
   input {
+    font-size: 17px;
     padding: 5px 5px 3px 5px;
   }
 

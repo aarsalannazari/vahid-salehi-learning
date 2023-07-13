@@ -10,30 +10,31 @@
   </head>
   <body>
     <noscript>please turn on your javascript</noscript>
-    <section class="login-form col-xs-6">
-      <div class="row">
-        <form action="main.php" method="post">
-          <h3>Login</h3>
-          <input
-            type="text"
-            name="username"
-            placeholder="username"
-            autocomplete
-            autofocus
-          />
-          <br />
-          <input type="password" name="password" placeholder="password" />
-          <br />
-          <div class="login-cover">
-            <button id="login" type="submit">login</button>
-          </div>
-          <hr />
-          <div class="signup-cover">
-            <span class="signup">Don't have account ?</span>
-            <a class="signup" target="_blank" href="signup.html">signup</a>
-          </div>
-        </form>
-      </div>
-    </section>
+    <div class="loading"></div>
+      <section class="login-form col-xs-6">
+        <div class="row">
+          <form action="main.php" method="post">
+            <h3>Login</h3>
+            <input
+              type="text"
+              name="username"
+              placeholder="username"
+              autocomplete
+              autofocus
+            />
+            <br />
+            <input type="password" name="password" placeholder="password" />
+            <br />
+            <div class="login-cover">
+              <button id="login" type="submit">login</button>
+            </div>
+            <hr />
+            <div class="signup-cover">
+              <span class="signup">Don't have account ?</span>
+              <a class="signup" target="_blank" href="signup.html">signup</a>
+            </div>
+          </form>
+        </div>
+      </section>
   </body>
 </html>

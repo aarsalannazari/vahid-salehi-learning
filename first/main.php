@@ -22,6 +22,7 @@
         <p>Password :
             <?php print_r($Password) ?>
         </p>
+        <?php ?>
     </section>
 </body>
 
