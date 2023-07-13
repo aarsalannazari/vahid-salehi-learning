@@ -1,93 +1,104 @@
 @charset "UTF-8";
 @import url("reset.css");
-@import url("menu-style.css");
 
 .background {
-    height: 100vh;
-    width: 100%;
-    background-image: url(../images/sky.jpg);
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    overflow-x: hidden;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../images/sky.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow-x: hidden;
 }
 
 .road {
-    background-image: url(../images/road.jpg);
-    position: absolute;
-    height: 300px;
-    width: 1000%;
-    display: block;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    animation: road 400ms linear infinite;
+  background-image: url(../images/road.jpg);
+  position: absolute;
+  height: 300px;
+  width: 1000%;
+  display: block;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  animation: road 400ms linear infinite;
 }
 
 @keyframes road {
-    100%{transform: translateX(1000px);}
+  100% {
+    transform: translateX(1000px);
+  }
 }
 
 .trees {
-    background-image: url(../images/trees.png);
-    position: absolute;
-    height: 150px;
-    width: 1000%;
-    display: block;
-    bottom: 300px;
-    animation: trees 40s linear infinite;
+  background-image: url(../images/trees.png);
+  position: absolute;
+  height: 150px;
+  width: 1000%;
+  display: block;
+  bottom: 300px;
+  animation: trees 40s linear infinite;
 }
 
 @keyframes trees {
-    100%{transform: translateX(10000px);}
+  100% {
+    transform: translateX(10000px);
+  }
 }
 
 .car {
-    position: absolute;
-    transform: translateX(-50%) rotateY(180deg);
-    width: 500px;
-    height: 300px;
-    left: 50%;
-    bottom: 100px;
+  position: absolute;
+  transform: translateX(-50%) rotateY(180deg);
+  width: 500px;
+  height: 300px;
+  left: 50%;
+  bottom: 100px;
 }
 
-.car img{
-    width: 100%;
-    animation: shake 1s linear infinite;
+.car img {
+  width: 100%;
+  animation: shake 1s linear infinite;
 }
 
 @keyframes shake {
-    0% {transform: translateY(-1px)}
-    50%{transform: translateY(1px)}
-    100%{transform: translateY(-1px)}
+  0% {
+    transform: translateY(-1px);
+  }
+  50% {
+    transform: translateY(1px);
+  }
+  100% {
+    transform: translateY(-1px);
+  }
 }
 
-.wheels{  
-    position: absolute; 
-    width: 60px;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 100px;
-    z-index: 2
+.wheels {
+  position: absolute;
+  width: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 100px;
+  z-index: 2;
 }
 
 .wheels img {
-    width: 80px;
-    animation: rotate 500ms linear infinite;
+  width: 80px;
+  animation: rotate 500ms linear infinite;
 }
 
 @keyframes rotate {
-    100%{transform: rotate(-360deg);}
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 
-.wheels .back-wheel{
-    position: absolute;
-    left : 111px;
-    bottom : 55px;
+.wheels .back-wheel {
+  position: absolute;
+  left: 111px;
+  bottom: 55px;
 }
 
-.wheels .front-wheel{
-    position: absolute;
-    left : -137px;
-    bottom : 55px;
+.wheels .front-wheel {
+  position: absolute;
+  left: -137px;
+  bottom: 55px;
 }
