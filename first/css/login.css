@@ -20,9 +20,12 @@
   transform: translate(-50%,-50%);
   border: 10px solid #efefef;
   border-top: 10px solid green;
+  border-bottom: 10px solid green;
+  border-right: 10px solid lightskyblue;
+  border-left: 10px solid lightskyblue;
   border-radius: 50%;
   z-index: 1;
-  animation: loading 1s linear 3;
+  animation: loading 1s linear infinite;
 }
 
 @keyframes loading {
@@ -41,6 +44,7 @@ hr {
 }
 
 .login-form {
+  opacity: 0;
   height: auto;
   position: absolute;
   top: 50%;
