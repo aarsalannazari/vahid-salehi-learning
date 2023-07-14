@@ -20,12 +20,12 @@
   bottom: 0;
   left: 0;
   right: 0;
-  animation: road 400ms linear infinite;
+  animation: road 300ms linear infinite;
 }
 
 @keyframes road {
   100% {
-    transform: translateX(1000px);
+    transform: translateX(100vh);
   }
 }
 
@@ -36,25 +36,26 @@
   width: 1000%;
   display: block;
   bottom: 300px;
-  animation: trees 40s linear infinite;
+  animation: trees 16s linear infinite;
 }
 
 @keyframes trees {
   100% {
-    transform: translateX(10000px);
+    transform: translateX(400vh);
   }
 }
 
-.car {
+.l90 {
   position: absolute;
   transform: translateX(-50%) rotateY(180deg);
   width: 500px;
   height: 300px;
   left: 50%;
   bottom: 100px;
+  z-index: 3;
 }
 
-.car img {
+.l90 img {
   width: 100%;
   animation: shake 1s linear infinite;
 }
@@ -63,7 +64,13 @@
   0% {
     transform: translateY(-1px);
   }
+  25% {
+    transform: translateY(1px);
+  }
   50% {
+    transform: translateY(-1px);
+  }
+  75% {
     transform: translateY(1px);
   }
   100% {
@@ -71,18 +78,18 @@
   }
 }
 
-.wheels {
+.l90-wheels {
   position: absolute;
   width: 60px;
   left: 50%;
   transform: translateX(-50%);
   bottom: 100px;
-  z-index: 2;
+  z-index: 3;
 }
 
-.wheels img {
+.l90-wheels img {
   width: 80px;
-  animation: rotate 500ms linear infinite;
+  animation: rotate 100ms linear infinite;
 }
 
 @keyframes rotate {
@@ -91,14 +98,52 @@
   }
 }
 
-.wheels .back-wheel {
+ .l90-back-wheel {
   position: absolute;
   left: 111px;
   bottom: 55px;
 }
 
-.wheels .front-wheel {
+.l90-front-wheel {
   position: absolute;
   left: -137px;
   bottom: 55px;
+}
+
+.audi {
+  position: absolute;
+  width: 400px;
+  height: 100px;
+  left: -70%;
+  bottom: 270px;
+  z-index: 2;
+}
+
+.audi img {
+  width: 100%;
+  animation: slow 12s linear infinite;
+}
+
+@keyframes slow {
+  100%{transform: translateX(300vw)}
+}
+
+.audi-wheels {
+  width: 124px;
+  height: 38px;
+  position: absolute;
+  left: -70%;
+  bottom: 270px;
+  z-index: 2;
+  animation: slow 12s linear infinite;
+}
+
+.audi-wheels img {
+  width: 75px;
+  animation: rotate 200ms linear infinite;
+}
+
+.audi-back-wheel{
+  position: absolute;
+  left: 284px;
 }
