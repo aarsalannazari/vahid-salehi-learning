@@ -13,15 +13,10 @@
     $Password = $_POST["password"];
     ?>
 </head>
-
 <body>
     <section>
-        <p>Username :
-            <?php print_r($Username) ?>
-        </p>
-        <p>Password :
-            <?php print_r($Password) ?>
-        </p>
+        <p>Username :<?php print_r($Username) ?></p>
+        <p>Password :<?php print_r($Password) ?></p>
         <?php ?>
     </section>
 </body>

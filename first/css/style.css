@@ -80,14 +80,23 @@
     100%{transform: rotate(-360deg);}
 }
 
-.wheels .back-wheel{
+.back-wheel{
     position: absolute;
     left : 111px;
     bottom : 55px;
 }
 
-.wheels .front-wheel{
+.front-wheel{
     position: absolute;
     left : -137px;
     bottom : 55px;
+}
+
+.login-link {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 205px;
+    z-index: 5;
+    animation: shake 1s linear infinite;
 }
