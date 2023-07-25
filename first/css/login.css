@@ -116,9 +116,7 @@ a.signup {
 }
 
 a.signup:hover {
-  direction: rtl;
   color: #7a6079;
-  text-decoration: underline;
 }
 
 .signup-cover {
